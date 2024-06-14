@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Kacper Stępień's website</div>
+        <div class="header-items">
+            <a class="home wysoko" href="home.html"><img src="home_.png" class="icon1">Home</a>
+            <a class="about wysoko" href="about.html"><img src="profile_.png" class="icon2">About me</a>
+            <a class="contact wysoko" href="#cont"><img src="contact_.png" class="icon3">Contact</a>
+        </div>
+    </header>
+    <section class="description" id="home">
+    <div class="columns">
+        <div class="column-left">
+            <h1 class="glowna">Hi, I'm Kacper Stępień and I am begginer at web development.</h1>
+            <p class="glowna2">Please do not judge my website. I am just learning</p>
+            <div class="container">
+                <button type="submit" class="btn" onclick="openPopup()">Click if you enjoy site</button>
+                <div class="popup" id="popup">
+                    <h2>Thank You!</h2>
+                    <p>I am glad you liked my page!</p>
+                    <button type="button" class="butn" onclick="closePopup()">OK</button>
+                </div>
+            </div>
+        </div>
+        <div class="column-right">
+            <img src="ja.png" alt="" class="ja">
+        </div>
+    </div>
+    </section>
+        <nav id="cont" class="contact2">
+            <h1 class="srodek">Contact me</h1> 
+            <div class="conts">
+            <div class="cont"><div class="up"><img src="email_.png" alt="" class="text"><h1>EMAIL</h1></div><div class="down"><p>coscoscoscos@gmail.com</p></div></div>
+            <div class="cont"><div class="up"><img src="discord_.png" alt="" class="text"><h1>DISCORD</h1></div><div class="down"><p>eloeloeleo</p></div></div>
+            <div class="cont"><div class="up"><img src="telephone_.png" alt="" class="text"><h1>PHONE</h1></div><div class="down"><p>999-998-997</p></div></div>
+            </div>
+        </nav>
+        <script>
+            let popup = document.getElementById("popup");
+
+            function openPopup(){
+                popup.classList.add("open-popup");
+            }
+            function closePopup(){
+                popup.classList.remove("open-popup");
+            }
+        </script>
+</body>
+</html>
